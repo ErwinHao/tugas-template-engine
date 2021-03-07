@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h2>Recently Used Legend:</h2>
+      <p class="legend-name"><%= data[1].metadata.name %></p>
+      <img src="<%= data[1].metadata.tallImageUrl %>" alt="<%= data[1].metadata.name %>" class="legends-img">
+    </div>
+    <div class="col">
+      <h2>Rank:</h2>
+      <img src="<%= data[0].stats.rankScore.metadata.iconUrl %>" alt="<%= data[0].stats.rankScore.metadata.rankName %>">
+      <p class="player-rank"><%= data[0].stats.rankScore.metadata.rankName %></p>
+    </div>
+    <div class="col">
+      <h2>Kills with <%= data[1].metadata.name %>:</h2>
+      <p class="kill-count"><%= data[1].stats.kills.displayValue %></p>
+    </div>
+  </div>
+</div>

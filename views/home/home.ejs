@@ -1,0 +1,11 @@
+<% layout('layouts/boilerplate') %>
+<form action="/home/view-home" method="GET">
+  <input type="hidden" name="view" value="true">
+  <button>View My Apex Legends Profile</button>
+</form>
+
+<% if(data){ %>
+<%- include('../partials/legends') %>
+<% } else {%>
+<h2>No data</h2>
+<% } %>
